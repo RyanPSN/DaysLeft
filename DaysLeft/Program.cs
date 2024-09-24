@@ -28,10 +28,14 @@ namespace DaysLeft
                 Console.WriteLine("Enter Current Day: ");
                 currentDay += int.Parse(Console.ReadLine());
 
+                Console.WriteLine("How Many Days in Month: ");
+                var days = int.Parse(Console.ReadLine());
+
+
                 Console.WriteLine("Your Birthday is in: {0} Month's",
                     (Math.Abs(passedMonth - month)));
                 Console.WriteLine("Your Birthday is in: {0} Day's ",
-                    (Math.Abs(currentDay - bDate - 30)));
+                    (Math.Abs(currentDay - bDate - days)));
 
                 Console.ReadLine();
             }
